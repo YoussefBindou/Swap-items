@@ -1,0 +1,61 @@
+@Import Url("Https://Fonts.Googleapis.Com/Css2?Family=Open+Sans&Display=Swap");
+Body {
+    Font-Family: "Open Sans", Sans-Serif;
+    Margin: 0;
+}
+A {
+    Text-Decoration: None;
+    Color: #000;
+    
+}
+A:hover {
+    Color: Rgb(179, 179, 179);
+}
+.Site-Header {
+    Border-Bottom: 1px Solid #Ccc;
+    Padding: 0.5em 1em;
+    Display: Flex;
+    Justify-Content: Space-Between;
+}
+.Site-Identity H1 {
+    Font-Size: 1.5em;
+    Margin: 0.6em 0;
+    Display: Inline-Block;
+}
+.Site-Navigation Ul,
+.Site-Navigation Li {
+    Margin: 0;
+    Padding: 0;
+}
+.Site-Navigation Li {
+    Display: Inline-Block;
+    Margin: 1.4em 1em 1em 1em;
+}
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+.search-container input{
+    background-color: #fff;
+    box-shadow: none;
+    padding: 0em;
+    
+    border: 1px solid #e7e7e7;
+    border-top-left-radius: 5px!important;
+    border-bottom-left-radius: 5px!important;
+    border-right: none;
+    
+    width: 50em;
+    height: 4em;
+}
+.search-container button{
+    width: 7em;
+    height: 4em;
+    color: white;
+    background-color:crimson ;
+    border: 0;
+    cursor : pointer;
+}
+  

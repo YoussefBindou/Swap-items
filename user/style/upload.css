@@ -1,0 +1,38 @@
+
+#upload{
+    margin:15% auto ;
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+
+}
+#upload form{
+    display: flex;
+    flex-direction: column;
+}
+#upload form input{
+    padding: 10px;
+    outline: none;
+    border: 1px solid lightblue;
+    margin-bottom: 10px;
+}
+
+#upload form button{
+    padding: 10px;
+    outline: none;
+    background-color: lightblue;
+    margin-bottom: 10px; 
+    border: none;
+    cursor : pointer;
+
+}
+#upload form input[type="submit"]{
+    background-color: lightgray;
+    border: none;
+}
+
+#upload form input[type="submit"]:hover{
+    background-color: white;
+    cursor : pointer;
+    border : 1px solid lightblue ;
+}

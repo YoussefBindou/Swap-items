@@ -1,0 +1,14 @@
+.card{
+
+    width: 18rem;
+    float: left;
+    min-height: 23em;
+    max-height: 30em;
+    
+}
+.card-img-top{
+    width: 100%;
+    height: 20em;
+    object-fit: cover;
+    margin-bottom: 20px;
+}

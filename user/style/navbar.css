@@ -1,0 +1,239 @@
+.flexMain {
+  display:flex;
+  align-items: center
+}
+.flex1 { flex:1 }
+.flex2 { flex:2 }
+.flex3 { flex:3 }
+
+button.siteLink {
+  margin-right: 5px;
+  margin-left:-5px;
+  border:none;
+  padding:24px;
+  display:inline-block;
+  min-width:115px;
+}
+.whiteLink {
+  background : #fff;
+}
+.whiteLink:active {
+  background : #000;
+  color: #fff;
+}
+.blackLink {
+  color: #fff;
+  background:#232323;
+  transition: all 300ms linear;
+}
+
+.blackLink:active {
+  color: #000;
+  background:#fff
+}
+#siteBrand {
+  font-family: impact;
+  letter-spacing : -1px;
+  font-size:32px;
+  color:#252525;
+  line-height : 1em;
+
+}
+#menuDrawer {
+  background:#fff;
+  position:fixed;
+  height:100vh;
+  overflow:auto;
+  z-index:12312;
+  top:0;
+  left:0;
+  border-right:1px solid #eaeaea;
+  min-width:25%;
+  max-width:320px;
+  width:100%;
+  transform : translateX(-100%);
+  transition : transform 200ms linear;
+}
+#mainNavigation {
+  transition : transform 200ms linear;
+  background : #fff;
+}
+.drawMenu > #menuDrawer {
+  transform : translateX(0%);
+}
+.drawMenu > #mainNavigation {
+  transform : translateX(25%);
+}
+.fa-times {
+  cursor : pointer
+}
+a.nav-menu-item:hover {
+  margin-left:2px;
+  border-left:10px solid black;
+}
+a.nav-menu-item{
+  transition:border 200ms linear;
+  text-decoration:none;
+  display:block;
+  padding:18px;
+  padding-left:32px;
+  border-bottom:1px solid #eaeaea;
+  font-weight:bold;
+  color:#343434
+}
+select.noStyle {
+  border:none;
+  outline:none
+}
+.nav-menu-item-a {
+display: inline-block;
+padding: 10px 15px;
+color: white;
+text-decoration: none;
+font-size: 16px;
+background-color: black;
+}
+
+.nav-menu-item-a i {
+margin-right: 10px;
+}
+
+ .search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.search-container form {
+  display: flex;
+}
+
+.search-container input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  width: 50%;
+  margin-right: 10px;
+}
+
+.search-container button[type="submit"] {
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: flex;
+}
+
+.search-container i {
+  font-size: 20px;
+}
+@media (max-width: 767px) {
+  .search-container {
+    display: none;
+  }
+
+}
+
+
+      @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Trade+Winds&display=swap');
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  nav {
+
+    background-color: #fff;
+    padding: 0 3rem;
+    border-radius: 0.625rem;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  li {
+    list-style-type: none;
+    position: relative;
+    padding: 0.625rem 0 0.5rem;
+  }
+  li ul {
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    align-items: flex-start;
+    transition: all 0.5s ease;
+    width: 20rem;
+    right: -3rem;
+    top: 4.5rem;
+    border-radius: 0.325rem;
+    gap: 0;
+    padding: 1rem 0rem;
+    opacity: 0;
+    box-shadow: 0px 0px 100px rgba(20, 18, 18, 0.25);
+    display: none;
+  }
+
+  ul li:hover > ul,
+  ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: flex;
+  }
+
+  .material-icons-outlined {
+    color: #888888;
+    transition: all 0.3s ease-out;
+  }
+
+  .material-icons-outlined:hover {
+    color: #000;
+    transform: scale(1.25) translateY(-4px);
+    cursor: pointer;
+  }
+
+
+  .profile {
+    height: 3rem;
+    width: auto;
+    cursor: pointer;
+  }
+
+  .sub-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.725rem;
+    cursor: pointer;
+    padding: 0.5rem 1.5rem;
+  }
+
+  .sub-item:hover {
+    background-color: rgba(232, 232, 232, 0.4);
+  }
+
+  .sub-item:hover .material-icons-outlined {
+    color: #000;
+    transform: scale(1.08) translateY(-2px);
+    cursor: pointer;
+  }
+
+  .sub-item:hover p {
+    color: #000;
+    cursor: pointer;
+  }
+
+  .sub-item p {
+    font-size: 0.85rem;
+    color: #888888;
+    font-weight: 500;
+    margin: 0.4rem 0;
+    flex: 1;
+  }
